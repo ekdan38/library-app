@@ -25,6 +25,7 @@ public class BookController {
 
     @PostMapping("/book/loan")
     public void loanBook(@RequestBody BookLoanRequest request){
+        int i;
         bookService.loanBook(request);
     }
 
